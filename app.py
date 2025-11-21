@@ -266,7 +266,7 @@ def crear_graficos_analisis_hidraulico(df):
 
 # CONFIGURACIÓN STREAMLIT
 st.set_page_config(page_title="Sistema Talapalca", page_icon="🌊", layout="wide")
-st.title("🌊 Sistema Inteligente de Curvas Altura-Caudal - TALAPALCA")
+st.title("🌊 IA para la generacion de Curvas Altura-Caudal")
 st.markdown("**Modelo entrenado con 34 aforos reales**")
 
 # Cargar modelo con manejo mejorado de errores
@@ -313,8 +313,8 @@ modelo = cargar_modelo()
 opcion = st.sidebar.radio("Navegación:", ["🏠 Inicio", "📤 Subir Aforos", "📊 Ingreso Manual", "📈 Curvas", "🔍 Análisis Hidráulico"])
 
 if opcion == "🏠 Inicio":
-    st.header("Bienvenido al Sistema Talapalca")
-    st.info("Sistema para generar curvas altura-caudal usando IA")
+    st.header("Bienvenido a la IA para curvas H-Q")
+    st.info("Aplicacion IA para generar curvas altura-caudal usando IA")
     
     st.subheader("Instrucciones de uso:")
     st.markdown("""
@@ -604,4 +604,4 @@ elif opcion == "🔍 Análisis Hidráulico":
             st.info("📁 Sube un archivo CSV con datos de aforos para realizar el análisis hidráulico")
 
 st.markdown("---")
-st.markdown("**🌊 IA para generar Curvas H-Q - Sistema Talapalca**")
+st.markdown("**🌊 IA para generar Curvas H-Q**")
